@@ -1,0 +1,17 @@
+name: Automation Master Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - '*'
+  pull_request:
+
+jobs:
+  CI:
+    uses: SkylineCommunications/_ReusableWorkflows/.github/workflows/Automation Master Workflow.yml@main
+    secrets:
+      api-key: ${{ secrets.DATAMINER_TOKEN }}
