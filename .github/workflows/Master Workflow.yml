@@ -1,0 +1,23 @@
+name: Master Workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-**'
+      - '[0-9]+.[0-9]+.[0-9]+.[0-9]+-**'
+  pull_request:
+
+jobs:
+  CI:
+    uses: SkylineCommunications/_ReusableWorkflows/.github/workflows/Master Workflow.yml@main
+    with:
+      configuration: Release
+    secrets:
+      DATAMINER_TOKEN: ${{ secrets.DATAMINER_TOKEN }}
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
