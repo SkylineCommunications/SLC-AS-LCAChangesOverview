@@ -33,7 +33,7 @@ id: 9b87bdf7-8cc2-42d5-8f7b-cfa574cbf6cb
 #   Max length: 100 characters.
 #   Cannot contain newlines.
 #   Cannot contain leading or trailing whitespace characters.
-title: SLC-GQIDS-GetApplicationInfo
+title: Get Low-Code App Information
 
 # [Optional]
 # General information about the Catalog item.
