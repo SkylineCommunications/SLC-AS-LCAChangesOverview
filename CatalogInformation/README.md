@@ -2,7 +2,7 @@
 
 ## About
 
-Make use of this ad-hoc data source to give you visibility into the **low-code apps (LCA)** deployed on a DataMiner Agent. Instead of manually browsing the application folders on disk to find out what changed, you can query this information directly from a low-code app or dashboard: which low-code app versions exist, who last changed each one, and when that change happened.
+Make use of this ad hoc data source to gain visibility into the **low-code apps (LCA)** deployed on a DataMiner Agent. Instead of manually browsing the application folders on disk to find out what changed, you can query this information directly from a low-code app or dashboard: which low-code app versions exist, who last changed each one, and when that change happened.
 
 ## Key Features
 
